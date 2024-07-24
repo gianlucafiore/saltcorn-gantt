@@ -140,10 +140,12 @@ const configuration_workflow = () =>
 		        {
                             name: "lang",
                             label: "Language",
-                            type: "String",
-                            sublabel: "es, fr, en, pt, it...",
-                            required: false
-                        },
+                            type: "String", 
+                            required: false,
+			    attributes: {
+				options: "es, fr, en, pt, it",
+			    },
+			},
                         {
                             name: "milestone_field",
                             label: "Milestone field",
@@ -198,7 +200,7 @@ const run = async(
         title_field,
         start_field,
         end_field,
-	    lang,
+        lang,
         milestone_field,
         progress_field,
     },
