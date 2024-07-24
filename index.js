@@ -137,6 +137,13 @@ const configuration_workflow = () =>
                                     .join(),
                             },
                         },
+		        {
+                            name: "lang",
+                            label: "Language",
+                            type: "String",
+                            sublabel: "es, fr, en, pt, it...",
+                            required: false
+                        },
                         {
                             name: "milestone_field",
                             label: "Milestone field",
@@ -191,6 +198,7 @@ const run = async(
         title_field,
         start_field,
         end_field,
+	    lang,
         milestone_field,
         progress_field,
     },
@@ -233,7 +241,8 @@ const run = async(
   var tasksJson = ${JSON.stringify(tasks)};
   var gantt = new Gantt(".gantt-target", tasksJson, {
 //doesnt work	view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
-	view_mode: '${gantt_view_mode_val}'
+	view_mode: '${gantt_view_mode_val}',
+ 	language: lang
   });
 `)
         )
