@@ -248,11 +248,11 @@ const run = async(
 ];*/
 const headers = [{
         script: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.6.1/frappe-gantt.min.js",
-        integrity: "sha512-IJBi4MhZGy7BV4es5UQQtueQ1q+M7HnWJ4mLnjEQDDh+aFa5jYeqq1mrayUuJrRzMbntc7IaAwESb6jDkTJhww==",
+        //integrity: "sha512-IJBi4MhZGy7BV4es5UQQtueQ1q+M7HnWJ4mLnjEQDDh+aFa5jYeqq1mrayUuJrRzMbntc7IaAwESb6jDkTJhww==",
     },
     {
-        css: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.6.1/frappe-gantt.min.js",
-        integrity: "sha512-qxE5FnEACGZSuLsbaDLCYuMRrxuLhQz1HtOJ2+3dHXSnFlckToa1rXHajkgLciNSdq+FCE4ey8R8fqjrD3HO0g==",
+        css: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.6.1/frappe-gantt.css",
+        //integrity: "sha512-qxE5FnEACGZSuLsbaDLCYuMRrxuLhQz1HtOJ2+3dHXSnFlckToa1rXHajkgLciNSdq+FCE4ey8R8fqjrD3HO0g==",
     },
 ];
 
