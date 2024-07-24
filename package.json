@@ -1,5 +1,5 @@
 {
-  "name": "@saltcorn/saltcorn-gantt",
+  "name": "@gianlucafiore/saltcorn-gantt",
   "version": "0.1.1",
   "description": "Gantt view plugin",
   "main": "index.js",
