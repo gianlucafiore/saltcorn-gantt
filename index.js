@@ -138,11 +138,11 @@ const configuration_workflow = () =>
                             },
                         },
 		        {
-                            name: "lang",
-                            label: "Language",
+                            name: "locale",
+                            label: "Language modified",
                             type: "String", 
 			    sublabel: "Language of calendar",
-                            required: false,
+                            required: true,
 			    attributes: {
 				options: "es,fr,en,pt,it",
 			    },
@@ -201,7 +201,7 @@ const run = async(
         title_field,
         start_field,
         end_field,
-        lang,
+        locale,
         milestone_field,
         progress_field,
     },
@@ -215,6 +215,7 @@ const run = async(
     const rows = await table.getRows(qstate);
     const id = `cal${Math.round(Math.random() * 100000)}`;
     const gantt_view_mode_val = gantt_view_mode ? gantt_view_mode : 'Month';
+    const lang = locale ? locale : 'es';
 
     // defines Tasks List 
     const tasks = rows.map((row) => {
