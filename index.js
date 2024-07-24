@@ -124,7 +124,7 @@ const configuration_workflow = () =>
                         },
                         {
                             name: "locale",
-                            label: "Language modified 2",
+                            label: "Language modified",
                             type: "String", 
                             sublabel: "Language of calendar",
                             required: true,
@@ -237,7 +237,7 @@ const run = async(
     );
 };
 
-const headers = [{
+/*const headers = [{
         script: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.5.0/frappe-gantt.js",
         integrity: "sha512-IJBi4MhZGy7BV4es5UQQtueQ1q+M7HnWJ4mLnjEQDDh+aFa5jYeqq1mrayUuJrRzMbntc7IaAwESb6jDkTJhww==",
     },
@@ -245,7 +245,17 @@ const headers = [{
         css: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.5.0/frappe-gantt.css",
         integrity: "sha512-qxE5FnEACGZSuLsbaDLCYuMRrxuLhQz1HtOJ2+3dHXSnFlckToa1rXHajkgLciNSdq+FCE4ey8R8fqjrD3HO0g==",
     },
+];*/
+const headers = [{
+        script: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.6.1/frappe-gantt.min.js",
+        integrity: "sha512-IJBi4MhZGy7BV4es5UQQtueQ1q+M7HnWJ4mLnjEQDDh+aFa5jYeqq1mrayUuJrRzMbntc7IaAwESb6jDkTJhww==",
+    },
+    {
+        css: "https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.6.1/frappe-gantt.min.js",
+        integrity: "sha512-qxE5FnEACGZSuLsbaDLCYuMRrxuLhQz1HtOJ2+3dHXSnFlckToa1rXHajkgLciNSdq+FCE4ey8R8fqjrD3HO0g==",
+    },
 ];
+
 
 module.exports = {
     sc_plugin_api_version: 1,
