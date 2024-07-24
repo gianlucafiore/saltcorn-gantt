@@ -82,22 +82,7 @@ const configuration_workflow = () =>
                             attributes: {
                                 options: "Month,Quarter Day,Half Day,Day,Week",
                             },
-                        },
-/*
-                        {
-                          name: "id_field",
-                          label: "Id field",
-                          type: "String",
-                          sublabel: "Task Id label",
-                          required: true,
-                          attributes: {
-                            options: fields
-                              .filter((f) => f.type.name === "Integer")
-                              .map((f) => f.name)
-                              .join(),
-                          },
-                        },
-*/
+                        }, 
                         {
                             name: "title_field",
                             label: "Title field",
@@ -137,16 +122,16 @@ const configuration_workflow = () =>
                                     .join(),
                             },
                         },
-		        {
+                        {
                             name: "locale",
                             label: "Language modified",
                             type: "String", 
-			    sublabel: "Language of calendar",
+                            sublabel: "Language of calendar",
                             required: true,
-			    attributes: {
-				options: "es,fr,en,pt,it",
-			    },
-			},
+                            attributes: {
+                                options: "es,fr,en,pt,it",
+                            },
+                        },
                         {
                             name: "milestone_field",
                             label: "Milestone field",
@@ -196,8 +181,7 @@ const run = async(
     viewname, {
         view_to_create,
         expand_view,
-	gantt_view_mode,
-//tbd        id_field,
+	    gantt_view_mode, 
         title_field,
         start_field,
         end_field,
@@ -246,7 +230,7 @@ const run = async(
   var gantt = new Gantt(".gantt-target", tasksJson, {
 //doesnt work	view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
 	view_mode: '${gantt_view_mode_val}',
- 	language: lang
+ 	language: ${lang}
   });
 `)
         )
