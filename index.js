@@ -141,9 +141,10 @@ const configuration_workflow = () =>
                             name: "lang",
                             label: "Language",
                             type: "String", 
+			    sublabel: "Language of calendar",
                             required: false,
 			    attributes: {
-				options: "es, fr, en, pt, it",
+				options: "es,fr,en,pt,it",
 			    },
 			},
                         {
