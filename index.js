@@ -124,7 +124,7 @@ const configuration_workflow = () =>
                         },
                         {
                             name: "locale",
-                            label: "Language modified",
+                            label: "Language modified 2",
                             type: "String", 
                             sublabel: "Language of calendar",
                             required: true,
