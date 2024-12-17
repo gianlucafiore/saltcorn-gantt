@@ -230,6 +230,7 @@ const run = async(
   var gantt = new Gantt(".gantt-target", tasksJson, {
 //doesnt work	view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
 	view_mode: '${gantt_view_mode_val}',
+ 	date_format:'ddd DD/MM/YYYY ' 
  	language: '${lang}'
   });
 `)
